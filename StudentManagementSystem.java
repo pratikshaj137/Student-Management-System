@@ -9,24 +9,24 @@ import java.util.List;
 public class StudentManagementSystem extends JFrame {
     private List<Student> students = new ArrayList<>();
 
-    // GUI components
+    
     private JTextField nameField, rollField, classField, gpaField;
     private JButton addButton, updateButton, deleteButton, viewButton, exportButton;
     private JTable studentTable;
     private DefaultTableModel tableModel;
 
     public EnhancedStudentManagementSystem() {
-        // Set up the frame
+        // Seting up the frame
         setTitle("Enhanced Student Management System");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Background panel with image
+        
         JPanel backgroundPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                // Load background image
+                
                 ImageIcon imageIcon = new ImageIcon("background.jpg");
                 Image image = imageIcon.getImage();
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
